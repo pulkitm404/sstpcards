@@ -1,24 +1,22 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import Row from './Row';
+import SearchBar from "material-ui-search-bar";
 
 function App() {
+  const [query, setQuery] = useState("Superman");
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="App-header">
+        SSTP Cards Demo
+      </div>
+      <SearchBar
+        placeholder="Search Movies"
+        cancelOnEscape ={true}
+        style={{width: "60%", margin:'auto'}}
+        onRequestSearch={(newValue) => setQuery(newValue)}
+      />
+      <Row query={query}/>
     </div>
   );
 }
