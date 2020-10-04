@@ -10,9 +10,6 @@ import Geocode from "react-geocode";
 import Autocomplete from "react-google-autocomplete";
 
 import { List, ListItem, ListItemText, Divider } from "@material-ui/core";
-const {
-  MarkerWithLabel,
-} = require("react-google-maps/lib/components/addons/MarkerWithLabel");
 
 const API_KEY = process.env.REACT_APP_MAP_API_KEY;
 

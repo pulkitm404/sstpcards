@@ -1,13 +1,13 @@
-import React, { useState } from 'react';
+import React  from 'react';
 import './App.css';
-import Row from './Row';
+/* import Row from './Row';
 import SearchBar from "material-ui-search-bar";
-import Map from './Map';
+import Map from './Map'; */
 import { AppBar, Typography } from '@material-ui/core';
 import LocationSearchModal from "./LandingPage";
 
 function App() {
-  const [query, setQuery] = useState("Superman");
+/*   const [query, setQuery] = useState("Superman"); */
   return (
     <div className="App">
      {/*  <div className="App-header">
