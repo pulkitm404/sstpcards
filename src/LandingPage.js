@@ -11,7 +11,7 @@ import Autocomplete from "react-google-autocomplete";
 
 import { List, ListItem, ListItemText, Divider } from "@material-ui/core";
 
-const API_KEY = process.env.REACT_APP_MAP_API_KEY;
+const API_KEY = "AIzaSyDGlzJKXjQW5ZTjP4dAhmXmv79TZV9pa2c";
 
 Geocode.setApiKey(API_KEY);
 Geocode.enableDebug();
