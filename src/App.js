@@ -14,7 +14,7 @@ function App() {
         {process.env.REACT_APP_NAME}
       </div> */}
       <AppBar >
-        <Typography variant="h5" style={{padding: 10}} >{process.env.REACT_APP_NAME}</Typography>
+        <Typography variant="h5" style={{padding: 10}} >SSTP MAPS DEMO</Typography>
       </AppBar>
      {/*  <SearchBar
         placeholder="Search Movies"
